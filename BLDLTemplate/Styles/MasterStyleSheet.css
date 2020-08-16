@@ -1,0 +1,520 @@
+#ticker { width:175px; height:280px; }
+#ticker dt { font:normal 14px Georgia; padding:0 10px 5px 10px;padding-top:10px; border:1px solid #ffffff; border-bottom:none; border-right:none; position:relative; }
+#ticker dd { margin-left:0; font:normal 11px Verdana; padding:0 10px 10px 10px; border-bottom:none; position:relative; }
+#ticker dd.last { border-bottom:none; }
+#ticker div { margin-top:0; }
+a:link, a:visited {
+
+text-decoration : none;
+}
+a img {
+border : 0;
+}
+div.wrap {
+width : 993px;
+margin : 0 auto;
+text-align : left;
+}
+div#top div#nav {
+float : left;
+clear : both;
+width : 993px;
+height : 52px;
+margin : 22px 0 0;
+}
+div#top div#nav ul {
+float : left;
+width : 700px;
+height : 52px;
+list-style-type : none;
+}
+
+div#header {
+margin : -1px 0 0;
+}
+div#video-header {
+height : 683px;
+margin : -1px 0 0;
+}
+div#header div.wrap {
+height : 299px;
+background : url(images/header-bg.png) no-repeat 50% 0;
+}
+div#header div#slide-holder {
+z-index : 40;
+width : 597px;
+height : 290px;
+position : absolute;
+    top: 152px;
+    left: 201px;
+}
+div#header div#slide-holder div#slide-runner {
+top : 1px;
+left : 109px;
+width : 610px;
+height : 280px;
+overflow : hidden;
+position : absolute;
+}
+div#header div#slide-holder img {
+margin : 0;
+display : none;
+position : absolute;
+}
+div#header div#slide-holder div#slide-controls {
+left : 0;
+bottom : 228px;
+width : 687px;
+height : 46px;
+display : none;
+position : absolute;
+background : url(images/slide-bg.png) 0 0;
+}
+div#header div#slide-holder div#slide-controls p.text {
+float : left;
+color : #fff;
+display : inline;
+font-size : 10px;
+line-height : 16px;
+margin : 15px 0 0 20px;
+text-transform : uppercase;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav {
+float : right;
+height : 24px;
+display : inline;
+margin : 11px 15px 0 0;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+float : left;
+width : 24px;
+height : 24px;
+display : inline;
+font-size : 11px;
+margin : 0 5px 0 0;
+line-height : 24px;
+font-weight : bold;
+text-align : center;
+text-decoration : none;
+background-position : 0 0;
+background-repeat : no-repeat;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a.on {
+background-position : 0 -24px;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+background-image : url(images/silde-nav.png);
+}
+div#nav ul li a {
+background : url(images/nav.png) no-repeat;
+}
+
+
+
+BODY {
+	
+	Background-color: #9F1E30;
+	text-transform:capitalize;
+}
+
+td {
+	font-family: Tahoma,  Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #5E5E5E; 
+	font-weight:normal; 
+	line-height:15px;
+	
+}
+
+.menu {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #5B5B5B; 
+	line-height:18px; 
+	text-decoration:none; 
+	font-weight:bold;
+}
+.menu:hover {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #5B5B5B; 
+	line-height:18px; 
+	text-decoration:underline; 
+	font-weight:bold;
+}
+
+.menu2 {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #777777; 
+	line-height:18px; 
+	text-decoration:none; 
+	font-weight:bold;
+}
+.menu2:hover {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #777777; 
+	line-height:18px; 
+	text-decoration:underline; 
+	font-weight:bold;
+}
+
+.cart {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	color: #3C3C3C; 
+	line-height:18px; 
+	text-decoration:none; 
+	font-weight:bold;
+}
+.cart:hover {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	color: #3C3C3C; 
+	line-height:18px; 
+	text-decoration:underline; 
+	font-weight:bold;
+}
+
+.big {
+	font-family: Tahoma, verdana, Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	color: #ffffff; 
+	line-height:16px; 
+	text-decoration:none; 
+	font-weight: bold; 
+}
+
+.large {
+	font-family: Tahoma, verdana, Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	color: #ffffff; 
+	line-height:15px; 
+	text-decoration:none; 
+	font-weight: bold; 
+}
+
+.caption {
+	font-family: Tahoma, verdana, Arial, Helvetica, sans-serif; 
+	font-size: 22px; 
+	color: #4A6663; 
+	line-height:15px; 
+	text-decoration:none; 
+	font-weight: Normal; 
+}
+
+.footermenu {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	color: #ffffff; 
+	line-height:18px; 
+	text-decoration:none; 
+	font-weight:bold;
+}
+.footermenu:hover {
+	font-family:   Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	color: #ffffff; 
+	line-height:18px; 
+	text-decoration:underline; 
+	font-weight:bold;
+}
+
+/*------------------------------ Button --------------------------------*/
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #044280), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #044280 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#044280;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:12px;
+	padding:6px 6px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #1570cd;
+
+	height:35px;
+	width:128px;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #044280) );
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #044280 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#044280');
+	background-color:#1e62d0;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+body
+{
+    background-color: #efebef;
+    font-family: Tahoma, Arial, sans-serif;
+   
+}
+
+.AlignLeft
+{
+	float: left;
+}
+/*Controls
+****************************************/
+.DropDown
+{
+	/*border:1px;
+	border-style:groove;
+	border-color:#3a69b5;
+	padding:1px 1px 1px 5px;
+	background:FFFFFF;
+	border-radius:5px;
+	-moz-border-radius:5px;  Firefox 3.6 and earlier
+	height:20px;*/
+}
+.CheckBox,
+.RadioButton,
+.TextBox
+{
+	border:1px none #3a69b5;
+	/*border-style:groove;*/
+	padding:1px 1px 1px 5px;
+	
+	-moz-border-radius:5px;  /*Firefox 3.6 and earlier*/
+	
+		text-align: left;
+	/*font-family: Segoe UI, Verdana, Tahoma, MS Sans Serif;*/
+	font-family: Tahoma;
+	font-size: 12px;
+	vertical-align: top;
+    top: 0px;
+    left: 0px;
+}
+.TextBoxRightAlign
+{
+	text-align:right;
+	border:1px groove #3a69b5;
+	padding:1px 1px 1px 5px;
+	
+	-moz-border-radius:5px; /* Firefox 3.6 and earlier*/
+	width:130px;
+	height:20px;
+    top: 0px;
+    left: 0px;
+}
+.TextBoxMultiline
+{
+	border:1px;
+	border-style:groove;
+	border-color:#3a69b5;
+	padding:1px 1px 1px 5px;
+	background:FFFFFF;
+	
+	-moz-border-radius:5px;  /*Firefox 3.6 and earlier*/
+}
+.Button
+{
+	/*font-family:Arial;
+	border:1px;
+	border-style:solid;
+	background-color: #3a69b5;
+	padding:2px 30px;  
+	color:White;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;   
+	border-radius:8px;
+	-moz-border-radius:8px;  Firefox 3.6 and earlier */
+}
+.Label
+{
+	/*font-family: Verdana;
+	font-size:small;
+	text-align: right;*/
+	font-family: Segoe UI, Verdana, Tahoma;
+	font-size: 12px;
+	vertical-align: top;
+}
+.table
+{
+	border:1px solid #92b7d0;
+	padding:10px 40px; 
+	background:#E2E8F1; /*#f6f6f6;#dddddd;a1a1a1*E2E8F1*/
+	width:100%;
+	
+	-moz-border-radius:18px;
+	margin-bottom: 20px;
+	}
+
+
+
+
+.smenu
+{
+	border:5px solid #a1a1a1;
+	padding:100px 40px; 
+	background:White; /*#f6f6f6;#dddddd;*/
+	width:100%;
+	
+	-moz-border-radius:6px;
+}
+.submenu
+{
+	border:1px solid #a1a1a1;
+	padding:5px 15px; 
+	background:#f6f6f6; /*#f6f6f6;#dddddd;*/
+	width:100%;
+	
+	-moz-border-radius:6px;
+}
+/*Areas
+****************************************************/
+.Main
+{
+	width:80%;
+	margin:0% 10% 0% 10%;	
+}
+.heading
+{
+	background: #dddddd;
+	/*color: #040066;*/
+	 color:#0033CC;
+	font-size: small;
+	font-weight: bold;
+	width:99%;
+	text-align:center;
+	
+}
+.subheading
+{
+	color: #0033CC;
+	font-size: small;
+	font-weight: bold;
+	
+}
+.division
+{
+	font-family: Verdana;
+	font-size:small;
+	border:1px;
+	border-style:groove;
+	border-color:#3a69b5;
+	padding:5px 5px 5px 5px;
+	background:FFFFFF;
+	
+	-moz-border-radius:5px; /* Firefox 3.6 and earlier*/
+	width:400px;
+	height:20px;
+}
+.Required
+{
+	color:Red;
+}
+.MainHeading 
+{
+	BACKGROUND: #3a69b5;
+	FONT-WEIGHT: bold;
+	color:White;
+	FONT-FAMILY: Verdana, sans-serif; 
+	font-size:small;
+	 BORDER-COLLAPSE: collapse;
+	 vertical-align: middle;
+	WIDTH: 99%;
+	padding-left:10px;
+}
+.capArea
+{
+	text-align:left;
+	margin: auto;
+	border:2px solid #a1a1a1;
+	padding:10px 40px; 
+	
+	-moz-border-radius:25px; /* Firefox 3.6 and earlier */	
+}
+.ErrorText
+{
+	background-color: #FBE3E4;
+    border: groove 1px Red;
+	padding:1px 1px 1px 5px;
+	
+	-moz-border-radius:5px; /* Firefox 3.6 and earlier*/
+	width:130px;
+	height:20px;
+}
+.ErrorDDL
+{
+	background-color: #FBE3E4;
+    border: groove 1px Red;
+	padding:1px 1px 1px 5px;
+	
+	-moz-border-radius:5px; /* Firefox 3.6 and earlier*/
+	height:20px;
+}
+/*Extender - WaterMark
+*********************************************************/
+.waterMark
+{
+	font-family: Arial;
+	font-size: .85em;
+	color: #999999;
+	font-style: italic;
+	border:1px;
+	border-style:groove;
+	border-color:#3a69b5;
+	padding:1px 1px 1px 5px;
+	background:FFFFFF;
+	
+	-moz-border-radius:5px; /* Firefox 3.6 and earlier*/
+	width:130px;
+	height:20px;
+}
+
+/*Right td alignment
+********************************************************/
+.rightTD
+{
+	padding-left:50px;	
+}
+
+/* Tab Multiline wrapping*/
+.ajax__tab_default .ajax__tab_header {white-space:normal!important;}
+
+
+table.gridStyle {
+    border-width: thin;
+    border-style: solid;
+    border-color: gray;
+    border-collapse: collapse;
+    background-color: white;
+}
+table.gridStyle td {
+    border-width: thin;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    padding:5px;
+}
+.BackgroundStyle
+{
+	background-color: #f3f3f3;
+      filter: alpha(opacity=50);
+      opacity: 0.5;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40167278-2A00-468C-BBF8-FE67ECCD376A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ATMApp</RootNamespace>
+    <AssemblyName>ATMApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\AllRuleSets.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\clCommonBL.cs" />
+    <Compile Include="DL\clDbSqlServer.cs" />
+    <Compile Include="frmCashReciept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCashReciept.designer.cs">
+      <DependentUpon>frmCashReciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompleted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompleted.designer.cs">
+      <DependentUpon>frmCompleted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomLogin.designer.cs">
+      <DependentUpon>frmCustomLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnterAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnterAmount.designer.cs">
+      <DependentUpon>frmEnterAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInterBankTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInterBankTransfer.designer.cs">
+      <DependentUpon>frmInterBankTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntraBankTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntraBankTransfer.designer.cs">
+      <DependentUpon>frmIntraBankTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectAccount.designer.cs">
+      <DependentUpon>frmSelectAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectBankFund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectBankFund.designer.cs">
+      <DependentUpon>frmSelectBankFund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThankYou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThankYou.designer.cs">
+      <DependentUpon>frmThankYou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransactionPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactionPassword.Designer.cs">
+      <DependentUpon>frmTransactionPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdatePIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdatePIN.designer.cs">
+      <DependentUpon>frmUpdatePIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWait.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmWait.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\BalanceDetailsRpt1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalanceDetailsRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\MiniBalanceDetailsRpt.cs">
+      <DependentUpon>MiniBalanceDetailsRpt.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Web References\CommunicationRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCashReciept.resx">
+      <DependentUpon>frmCashReciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompleted.resx">
+      <DependentUpon>frmCompleted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomLogin.resx">
+      <DependentUpon>frmCustomLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnterAmount.resx">
+      <DependentUpon>frmEnterAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInterBankTransfer.resx">
+      <DependentUpon>frmInterBankTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntraBankTransfer.resx">
+      <DependentUpon>frmIntraBankTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectAccount.resx">
+      <DependentUpon>frmSelectAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectBankFund.resx">
+      <DependentUpon>frmSelectBankFund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThankYou.resx">
+      <DependentUpon>frmThankYou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactionPassword.resx">
+      <DependentUpon>frmTransactionPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdatePIN.resx">
+      <DependentUpon>frmUpdatePIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWait.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmWait.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BalanceDetailsRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BalanceDetailsRpt1.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MiniBalanceDetailsRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MiniBalanceDetailsRpt.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\CommunicationRef\CommunicationService.wsdl" />
+    <None Include="Web References\CommunicationRef\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="error.ico" />
+    <Content Include="Images\Alsalam_ATM_card_by_zeemomin.jpg" />
+    <Content Include="Images\arrow_button.jpg" />
+    <Content Include="Images\atmLoginCard.png" />
+    <Content Include="Images\backImage.jpg" />
+    <Content Include="Images\backimg.jpg" />
+    <Content Include="Images\Balance Enquiry.png" />
+    <Content Include="Images\Bill Payment.png" />
+    <Content Include="Images\button.png" />
+    <Content Include="Images\button_background.png" />
+    <Content Include="Images\cash Withdrawal.png" />
+    <Content Include="Images\Current Account.png" />
+    <Content Include="Images\currentaccount.png" />
+    <Content Include="Images\exitbutton.png" />
+    <Content Include="Images\Fund Transfer.png" />
+    <Content Include="Images\GoBack.png" />
+    <None Include="Web References\CommunicationRef\CommunicationService.disco" />
+    <None Include="Images\GoBackCrystalSmall.png" />
+    <Content Include="Images\GoBackGreen.png" />
+    <Content Include="Images\GoBackSmall.png" />
+    <Content Include="Images\Inter Bank Transfer.png" />
+    <Content Include="Images\Intra Bank Transfer.png" />
+    <Content Include="Images\keyindex.jpg" />
+    <Content Include="Images\Mini Statement.jpg" />
+    <Content Include="Images\Mini Statement.png" />
+    <Content Include="Images\More Services.png" />
+    <Content Include="Images\nobutton.png" />
+    <Content Include="Images\Other Account N.png" />
+    <Content Include="Images\PIN Change.png" />
+    <Content Include="Images\Proceed.png" />
+    <Content Include="Images\Saving Account N.png" />
+    <Content Include="Images\Savings Account.png" />
+    <None Include="Images\transfer.png" />
+    <Content Include="Images\yesbutton.png" />
+    <Content Include="Readme.txt" />
+    <None Include="Images\cards.jpg" />
+    <Content Include="Images\Credit-cards.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:50316/CommunicationService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CommunicationRef\</RelPath>
+      <UpdateFromURL>http://localhost:50316/CommunicationService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ATMApp_CommunicationRef_CommunicationService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

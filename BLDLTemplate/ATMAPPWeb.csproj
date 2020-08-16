@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8925DF4A-2815-41DC-80B5-D9811FB5C7EB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLDLTemplate</RootNamespace>
+    <AssemblyName>BLDLTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddFavTransaction.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="ChangePasswordScreen.aspx" />
+    <Content Include="CommunicationService.asmx" />
+    <Content Include="CreditCardDetails.aspx" />
+    <Content Include="CustomerRegform.aspx" />
+    <Content Include="DailyTransactionScreen.aspx" />
+    <Content Include="EmailTemplate\EmailTemplate.htm" />
+    <Content Include="ExportOption.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\adv.gif" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\calendar.gif" />
+    <Content Include="images\Cancel.png" />
+    <Content Include="images\choose.gif" />
+    <Content Include="images\Delete.gif" />
+    <Content Include="images\Edit.png" />
+    <Content Include="images\far.gif" />
+    <Content Include="images\feel.jpg" />
+    <Content Include="images\foxwall.gif" />
+    <Content Include="images\greenbar.gif" />
+    <Content Include="images\header-bg.png" />
+    <Content Include="images\jack.gif" />
+    <Content Include="images\jacket.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\mainimage.jpg" />
+    <Content Include="images\man.jpg" />
+    <Content Include="images\menubar.gif" />
+    <Content Include="images\nature-photo.png" />
+    <Content Include="images\nature-photo1.png" />
+    <Content Include="images\nature-photo2.png" />
+    <Content Include="images\nature-photo3.png" />
+    <Content Include="images\nature-photo4.png" />
+    <Content Include="images\nature-photo5.png" />
+    <Content Include="images\nature-photo6.png" />
+    <Content Include="images\nav-bg.png" />
+    <Content Include="images\pgbg.gif" />
+    <Content Include="images\product1.jpg" />
+    <Content Include="images\product2.jpg" />
+    <Content Include="images\product3.jpg" />
+    <Content Include="images\product4.jpg" />
+    <Content Include="images\product5.jpg" />
+    <Content Include="images\product6.jpg" />
+    <Content Include="images\shop.gif" />
+    <Content Include="images\silde-nav.png" />
+    <Content Include="images\slide-bg.png" />
+    <Content Include="images\sweater1.jpg" />
+    <Content Include="images\sweater2.jpg" />
+    <Content Include="images\sweater3.jpg" />
+    <Content Include="images\sweater4.jpg" />
+    <Content Include="images\sweater5.jpg" />
+    <Content Include="images\sweater6.jpg" />
+    <Content Include="images\Telerik.Web.UI.Skins.WebBlue.Common.loading.gif" />
+    <Content Include="images\Update.png" />
+    <Content Include="images\whatsnew.jpg" />
+    <Content Include="ImportCustomerDetail.aspx" />
+    <Content Include="js\ie6.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\verticalscrol.js" />
+    <Content Include="LockInvalidateCard.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MasterBankDetail.aspx" />
+    <Content Include="PaymentTransaction.aspx" />
+    <Content Include="PayMobileBill.aspx" />
+    <Content Include="ReportBlankPage.aspx" />
+    <Content Include="SecurityChallengeScreen.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\MasterStyleSheet.css" />
+    <Content Include="ThankYouPage.aspx" />
+    <Content Include="ViewBankCredit.aspx" />
+    <Content Include="ViewCustomerReport.aspx" />
+    <Content Include="ViewReportByBank.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFavTransaction.aspx.cs">
+      <DependentUpon>AddFavTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddFavTransaction.aspx.designer.cs">
+      <DependentUpon>AddFavTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordScreen.aspx.cs">
+      <DependentUpon>ChangePasswordScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordScreen.aspx.designer.cs">
+      <DependentUpon>ChangePasswordScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommunicationService.asmx.cs">
+      <DependentUpon>CommunicationService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MasterBankTemplate.Master.cs">
+      <DependentUpon>MasterBankTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterBankTemplate.Master.designer.cs">
+      <DependentUpon>MasterBankTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CreditCardDetails.aspx.cs">
+      <DependentUpon>CreditCardDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreditCardDetails.aspx.designer.cs">
+      <DependentUpon>CreditCardDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegform.aspx.cs">
+      <DependentUpon>CustomerRegform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerRegform.aspx.designer.cs">
+      <DependentUpon>CustomerRegform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyTransactionScreen.aspx.cs">
+      <DependentUpon>DailyTransactionScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyTransactionScreen.aspx.designer.cs">
+      <DependentUpon>DailyTransactionScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportOption.aspx.cs">
+      <DependentUpon>ExportOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportOption.aspx.designer.cs">
+      <DependentUpon>ExportOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ImportCustomerDetail.aspx.cs">
+      <DependentUpon>ImportCustomerDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportCustomerDetail.aspx.designer.cs">
+      <DependentUpon>ImportCustomerDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LockInvalidateCard.aspx.cs">
+      <DependentUpon>LockInvalidateCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LockInvalidateCard.aspx.designer.cs">
+      <DependentUpon>LockInvalidateCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterBankDetail.aspx.cs">
+      <DependentUpon>MasterBankDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterBankDetail.aspx.designer.cs">
+      <DependentUpon>MasterBankDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentTransaction.aspx.cs">
+      <DependentUpon>PaymentTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentTransaction.aspx.designer.cs">
+      <DependentUpon>PaymentTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayMobileBill.aspx.cs">
+      <DependentUpon>PayMobileBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayMobileBill.aspx.designer.cs">
+      <DependentUpon>PayMobileBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportBlankPage.aspx.cs">
+      <DependentUpon>ReportBlankPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportBlankPage.aspx.designer.cs">
+      <DependentUpon>ReportBlankPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCustomerRegistrationBankCopy.cs">
+      <DependentUpon>rptCustomerRegistrationBankCopy.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptCustomerRegistrationBank.cs">
+      <DependentUpon>rptCustomerRegistrationBank.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptCreditCardDetailsBankCopy.cs">
+      <DependentUpon>rptCreditCardDetailsBankCopy.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptCreditCardDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCreditCardDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCustomerRegistration.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCustomerRegistration.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecurityChallengeScreen.aspx.cs">
+      <DependentUpon>SecurityChallengeScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurityChallengeScreen.aspx.designer.cs">
+      <DependentUpon>SecurityChallengeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterTemplate.Master.cs">
+      <DependentUpon>MasterTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterTemplate.Master.designer.cs">
+      <DependentUpon>MasterTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYouPage.aspx.cs">
+      <DependentUpon>ThankYouPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYouPage.aspx.designer.cs">
+      <DependentUpon>ThankYouPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBankCredit.aspx.cs">
+      <DependentUpon>ViewBankCredit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBankCredit.aspx.designer.cs">
+      <DependentUpon>ViewBankCredit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomerReport.aspx.cs">
+      <DependentUpon>ViewCustomerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCustomerReport.aspx.designer.cs">
+      <DependentUpon>ViewCustomerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReportByBank.aspx.cs">
+      <DependentUpon>ViewReportByBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewReportByBank.aspx.designer.cs">
+      <DependentUpon>ViewReportByBank.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Attachment\" />
+    <Folder Include="CustomerReports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{B3C5D172-7F4A-46BA-B12B-67D38A175E10}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{0AED9F04-0508-4817-9529-2BBDA93C2CD7}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterTemplate.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Thumbs.db" />
+    <Content Include="MasterBankTemplate.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\rptCustomerRegistrationBankCopy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCustomerRegistrationBankCopy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCustomerRegistrationBank.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCustomerRegistrationBank.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCreditCardDetailsBankCopy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCreditCardDetailsBankCopy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCreditCardDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCreditCardDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCustomerRegistration.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCustomerRegistration.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50316</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

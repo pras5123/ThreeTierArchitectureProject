@@ -1,0 +1,215 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterTemplate.Master.cs" Inherits="BLDLTemplate.Site1" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link href="Styles/MasterStyleSheet.css" rel="stylesheet" type="text/css" />
+
+
+    <style type="text/css">
+        .style1
+        {
+            width: 148px;
+        }
+        .style2
+        {
+            font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #3C3C3C;
+            line-height: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            width: 287px;
+        }
+    </style>
+
+</head>
+<body background="images/pgbg.gif" >
+<form id="form1" runat="server">
+<table style="height:600px" width="80%" border="0" align="center"  cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="25" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="75" align="center"  valign="middle"><table width="980" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="475" height="30" align="left" valign="middle" class="caption">ATM single 
+                    Card Transaction&nbsp;</td>
+                <td height="30" align="right" valign="middle" class="style2">Search</td>
+                <td height="30" align="center" valign="middle" class="style1"><input maxlength="9" size="10" 
+            name="zipCode" style="font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif; background-color: #F4F4F4; color: #102132; border: 1px solid #AFAFAF;width: 130px; ""/></td>
+                <td width="50" height="30"><a href="#" class="cart">go</a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="32" align="center" valign="middle" background="images/menubar.gif">
+          <table width="750" border="0" cellspacing="0" cellpadding="0">
+              <tr align="center" valign="middle">
+                <td width="60" height="25">
+                    <asp:LinkButton ID="lnkHome" CssClass="footermenu" runat="server">Home</asp:LinkButton></td>
+                
+               
+               
+              
+               
+               
+              
+                <td width="65" height="25"> 
+                 <asp:LinkButton ID="lnkAboutUs" CssClass="footermenu" CausesValidation="false" runat="server">About Us</asp:LinkButton></td>
+             
+                <td width="85" height="25"> 
+                 <asp:LinkButton ID="lnkContactUs" CssClass="footermenu" CausesValidation="false" runat="server">Contact us</asp:LinkButton></td>
+                 <td width="70" height="25">
+                 <asp:LinkButton ID="lnkLogOut" CssClass="footermenu" CausesValidation="false" runat="server" 
+                         onclick="lnkLogOut_Click">Log Out</asp:LinkButton></td>
+                
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr align="center" valign="top">
+                <td width="45"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding-left:10px">
+                    <tr> 
+                      <td height="31" align="left" valign="middle" background="images/shop.gif" style="background-repeat:no-repeat">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="footermenu"><strong><font color="#FFFFFF"> 
+                          Customer Details</font></strong></span></td>
+                    </tr>
+                    <tr> 
+                      <td style="border-bottom:1px solid #D8D8D8" height="26" align="center" valign="middle">
+                                <table width="90%" border="0" cellspacing="0" cellpadding="0" 
+                                    style="font-weight: bold">
+                               
+                                <tr> 
+                                  <td width="10%" height="22" align="center"><img src="images/bullet.gif" width="7" height="9"/></td>
+                                  <td width="90%" height="22" align="left" valign="middle">
+                                   <asp:LinkButton ID="lnkSecurityChallenge" CssClass="menu2" runat="server" 
+                                          CausesValidation="False" PostBackUrl="~/SecurityChallengeScreen.aspx">Security Challenge</asp:LinkButton>
+                                  </td>
+                                </tr>
+                                <tr> 
+                                  <td width="10%" height="22" align="center"><img src="images/bullet.gif" width="7" height="9"/></td>
+                                  <td width="90%" height="22" align="left" valign="middle">
+                                  <asp:LinkButton ID="lnkExportOption" CssClass="menu2" runat="server" 
+                                          CausesValidation="False" onclick="lnkExportOption_Click" >Export Option</asp:LinkButton>
+                                 
+                                  
+                                  </td>
+                                </tr>
+                                <tr> 
+                                  <td width="10%" height="22" align="center"><img src="images/bullet.gif" width="7" height="9"/></td>
+                                  <td width="90%" height="22" align="left" valign="middle">
+                                      <asp:LinkButton ID="lnkDailyTransaction" CssClass="menu2" runat="server" 
+                                          CausesValidation="False" PostBackUrl="~/DailyTransactionScreen.aspx">My Account Details</asp:LinkButton>
+                               
+                                </tr>
+                                <tr> 
+                                  <td width="10%" height="22" align="center"><img src="images/bullet.gif" width="7" height="9"/></td>
+                                  <td width="90%" height="22" align="left" valign="middle">
+                                      <asp:LinkButton ID="lnkTransactionPayment" CssClass="menu2" runat="server" 
+                                          CausesValidation="False" PostBackUrl="~/PaymentTransaction.aspx">Make a Transaction</asp:LinkButton>
+                               
+                                </tr>
+                                <tr> 
+                                  <td width="10%" height="22" align="center"><img src="images/bullet.gif" width="7" height="9"/></td>
+                                  <td width="90%" height="22" align="left" valign="middle">
+                                      <asp:LinkButton ID="lnkChangePassword" CssClass="menu2" runat="server" 
+                                          CausesValidation="False" PostBackUrl="~/ChangePasswordScreen.aspx">Change Password</asp:LinkButton>
+                               
+                                </tr>
+
+                                 <tr> 
+                                  <td width="10%" height="22" align="center"><img src="images/bullet.gif" width="7" height="9"/></td>
+                                  <td width="90%" height="22" align="left" valign="middle">
+                                   
+                                      <asp:LinkButton ID="lnkViewReport" CssClass="menu2" runat="server" 
+                                          CausesValidation="False" PostBackUrl="~/ViewCustomerReport.aspx">View Report</asp:LinkButton>
+                                      </td>
+                                </tr>
+                                </table></td>
+                    </tr>
+                    
+                    
+                        
+
+                       
+                       <tr>
+                       <td>
+                       <table width="200px" border="0" cellspacing="0" cellpadding="0">
+                         
+                          
+
+                        </table>
+                        <br />
+                       </td>
+                        </tr>
+
+                    
+                  </table></td>
+         
+                <td width="82%">    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            
+        </asp:ContentPlaceHolder>
+    </div></td>
+                <td width="6">&nbsp;</td>
+                <td width="180"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding-right:15px" >
+                 
+                    <tr>
+                      <td height="290" align="left" valign="top">
+
+    <div id="tickerContainer">
+
+      <dl id="ticker">
+
+        <dd class="text"><a href="kidswear.aspx"><img src="images/1.jpg" height="100" width="180" /></a></dd>
+
+        <dd class="text"><img src="images/2.jpg" height="100" width="180" /></dd>
+
+        <dd class="text"><img src="images/3.jpg" height="100" width="180" /></dd>
+
+        <dd class="text"><img src="images/4.jpg" height="100" width="180" /></dd>
+
+ 
+
+      </dl>
+
+    </div>
+
+
+
+ 
+
+                      </td>
+                    </tr>
+                 
+                    <tr>
+                      <td align="center" valign="top"><a href="#"></a></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="40" align="center" valign="middle">copyrights - www.UniqueAtm.com</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="25" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+</form>
+</body>
+
+</html>
+
