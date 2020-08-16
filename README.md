@@ -8,3 +8,11 @@ Currently ATM  transaction is only one way i.e one user can do a transaction on 
 
 Proposed System : 
 ATM transaction has been simplified by using the same card for different bank accounts. User has a priviledge to change his ATM pin and can carry out his transaction on different banks as a normal process.
+
+
+
+Database back up is provided  :ATMDB.bak  
+Change the connection string (to your server name) in web.config file to check the live project
+
+
+
